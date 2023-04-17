@@ -16,16 +16,18 @@
 	}
 
 	function imprimir(frase){
-
 		document.write(frase);
 		salralinea();
-
 	}
 
-var peso = 71
-var altura = 1.72
-var imc = peso/(altura*altura)
+	function calcularIMC(peso,altura,name){
+        imc = peso / (altura * altura);
+        imprimir("El IMC calculado de " + name + " es: " + imc);
+	}
 
-imprimir("El IMC es: " + imc)
+    calcularIMC(71,1.72,"Juan");
+    calcularIMC(75,1.73,"Pedro");
+
+
 </script>
 </html>

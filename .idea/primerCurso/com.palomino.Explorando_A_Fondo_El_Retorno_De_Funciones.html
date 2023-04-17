@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+</head>
+<body>
+<h1>Claular IMC</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+
+    //Para calcular promedios de imc´s
+
+	function calcularIMC(peso,altura){
+
+        return peso / (altura * altura);
+
+	}
+
+    imprimir("El promedio del IMC calculador de xx y xxss: " + (calcularIMC(71,1.72) + calcularIMC(75,1.73))/2);
+
+
+</script>
+
+
+</body>
+</html>

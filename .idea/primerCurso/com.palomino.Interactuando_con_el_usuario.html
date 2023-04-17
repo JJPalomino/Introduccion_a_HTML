@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactuando con el usuario</title>
+</head>
+<body>
+
+<h1>Claular IMC</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+	function calcularIMC(peso,altura){
+        return peso / (altura * altura);
+	}
+
+    //El prompt sirve para pedir al usuario que ingrese datos
+
+	var nombre = prompt("Infomme su nombre: ")
+    var peso = prompt(nombre + " Infomr su peso: ");
+    var altura = prompt(nombre + " Infomr su altura: ");
+
+    imcCalculado = calcularIMC(peso,altura);
+
+    imprimir(nombre + " su IMC calculado es: " + imcCalculado);
+
+
+</script>
+
+</body>
+</html>
